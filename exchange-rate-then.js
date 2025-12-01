@@ -17,7 +17,7 @@ function convertCurrency() {
     }
 
     // API Key가 없는 안전한 주소
-    const url = `/.netlify/functions/exchange?from=${fromCurrency}`;
+    const url = `/.netlify/functions/get-rate?from=${fromCurrency}`;
 
     fetch(url)
         .then(res => res.json())
