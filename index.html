@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="exchange-rate.css">
+</head>
+<body>
+    <div class="converter-container">
+        <h1>환율 변환기</h1>
+        <input type="number" id="amount" placeholder="금액 입력" />
+        <select id="fromCurrency">
+            <option value="USD">USD(달러)</option>
+            <option value="KRW">KRW(원)</option>
+            <option value="EUR">EUR(유로)</option>
+            <option value="JPY">JPY(엔)</option>
+            <option value="CNY">CNY(위안)</option>
+        </select>
+        <select id="toCurrency">
+            <option value="KRW">KRW(원)</option>
+            <option value="USD">USD(달러)</option>
+            <option value="EUR">EUR(유로)</option>
+            <option value="JPY">JPY(엔)</option>
+            <option value="CNY">CNY(위안)</option>
+        </select>
+        <button onclick="convertCurrency()">변환</button>
+        <p id="result"></p>
+    </div>
+
+    <script src="exchange-rate-then.js"></script>
+</body>
+</html>
